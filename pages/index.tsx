@@ -85,7 +85,7 @@ const Home: NextPage<HomeProps> = ({ products }) => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {filteredProducts.map((product) => (
-            <div className="bg-white p-4 shadow-lg rounded-md">
+            <div  key={product.id} className="bg-white p-4 shadow-lg rounded-md">
               <div className="flex justify-center items-center h-48 mb-4">
                 <img
                   src={product.image}
